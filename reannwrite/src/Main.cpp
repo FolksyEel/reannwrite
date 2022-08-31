@@ -5,12 +5,16 @@
 
 namespace Lib {
 
+
+	//template print function
 	template <typename T>
 	void print(T t)
 	{
 		std::cout << t << "\n";
 	}
 
+
+	//Writes to textfile
 	void WritetoFile(std::string filePath)
 	{
 		std::ofstream file(filePath);
