@@ -23,6 +23,16 @@ namespace Lib {
 		file << fileContent;
 		file.close();
 	}
+
+	void ReadFromFile()
+	{
+		std::string fileContent;
+		std::ifstream openFile("myFile.txt");
+		while (std::getline(openFile, fileContent))
+		{
+			std::cout << "Står i Fil: " << fileContent << "\n";
+		}
+		openFile.close();
 	}
 }
 
@@ -32,7 +42,6 @@ int main()
 {
 	Lib::print("Hej");
 	Lib::WritetoFile("myFile.txt");
-
-
+	Lib::ReadFromFile();
 
 }
