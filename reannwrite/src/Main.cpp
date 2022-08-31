@@ -23,6 +23,7 @@ namespace Lib {
 		file << fileContent;
 		file.close();
 	}
+	}
 }
 
 
